@@ -9,8 +9,8 @@ let win : any = typeof window !== 'undefined' && window || {};
 export class SweetAlertService {
   constructor() {}
 
-  swal() {
-    return win.Sweetalert2(...Array.from(arguments));
+  swal(options) {
+    return win.Sweetalert2(options);
   }
 
   prompt(options) {
